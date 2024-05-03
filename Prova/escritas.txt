@@ -1,0 +1,53 @@
+1.	
+ Explique o que é herança em orientação a objetos e como ela é implementada em C#. 
+ Dê um exemplo prático de como a herança pode ser utilizada 
+ em um sistema de gerenciamento de funcionários.
+
+	Herança é uma classe herdar os atributos e metodos de uma outra classe, 
+	sendo a classe que herda a classe filha
+	e a classe de que é herdada a super classe ou classe mãe
+	sendo assim podemos reaproveitar atributos ou partes semelhantes entre varias classes
+
+	Em c# criamos uma Classe com abstract e para herda-la criamos a classe desejada ex:
+
+	"public class classe_filha : classe_mae "
+	
+	Levando em consideração que um funcionario é uma pessoa podemos criar 
+	uma classe Pessoa e a classe Funcionario herda da Pessoa
+
+2. 
+ O que são interfaces em orientação a objetos  
+ e qual é a sua importância na construção de sistemas em C#? 
+ Dê um exemplo de como uma interface pode ser utilizada para garantir 
+ a interoperabilidade entre diferentes classes em um sistema de pagamento online.
+
+	Interfaces definem um conjunto de metodos a serem implementados por outra classe
+	Sao importantes pois definem um padrao para o seu uso podendo variar a implementacao 
+	alem possibilitam a utilização do polimorfismo e confirmam o sucesso entre as mesmas 
+	
+
+3.	
+ Diferencie sobrecarga e sobreposição (ou sobrescrita) e forneça exemplos de cada um em C#. 
+
+	Na sobrecarga colocamos mais arguemntos no mesmo metodo 	
+
+	public void FazerAlgo(int x){}
+	
+	public void FazerAlgo(int x,int y){}
+	
+
+	Já na sobrescrita reescrevemos o metodo sem alterar os argumentos ex:
+
+	public virtual void Do(int x){
+
+		return x + 1;
+	
+	}
+
+	Reescrevemos: 
+
+	public override void Do(int x){
+
+		return x + 2;
+
+	}
